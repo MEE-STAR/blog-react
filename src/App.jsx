@@ -9,7 +9,7 @@ import Register from "./pages/Register";
 import UserProfile from "./pages/UserProfile";
 import CreatePost from "./pages/PostForm";
 import PostForm from "./pages/PostForm";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 
 function App() {
   return (
