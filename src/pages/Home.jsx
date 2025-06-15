@@ -1,9 +1,9 @@
-import FloatingAddButton from '../components/FloatingAddButton'
-import PostCard from '../components/PostCard'
-import { usePosts } from '../context/PostContext'
+import FloatingAddButton from "../components/FloatingAddButton";
+import PostCard from "../components/PostCard";
+import { usePosts } from "../context/PostContext";
 
 const Home = () => {
-  const { posts, loading, error } = usePosts()
+  const { posts, loading, error } = usePosts();
 
   return (
     <div className="p-4 max-w-3xl mx-auto">
@@ -14,13 +14,11 @@ const Home = () => {
       {!loading && posts.length === 0 && (
         <p className="text-center text-gray-500">No posts yet</p>
       )}
-      {!loading && posts.map((post) => (
-        <PostCard key={post._id} post={post} />
-      ))}
+      {!loading && posts.map((post) => <PostCard key={post._id} post={post} />)}
 
       <FloatingAddButton />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
