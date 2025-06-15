@@ -1,6 +1,6 @@
 import FloatingAddButton from "../components/FloatingAddButton";
 import PostCard from "../components/PostCard";
-import { usePosts } from "../context/PostContext";
+import { usePosts } from "../context/sss";
 
 const Home = () => {
   const { posts, loading, error } = usePosts();
