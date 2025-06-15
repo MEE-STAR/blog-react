@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
-import Navbar from "./components/navbar";
+
+import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -14,7 +15,7 @@ function App() {
     <>
       <Router>
         {/* Shared Navbar */}
-        <Navbar />
+        <Navbar/>
 
         {/* Route views */}
         <Routes>
